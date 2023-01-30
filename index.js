@@ -9,7 +9,7 @@
       {
         duration: 1.5,
         width: "0",
-        ease: "power2.inOut",
+        ease: "power4.out",
       },
       1
     )
@@ -20,7 +20,7 @@
         x: "-373px",
         ease: "power4.Out",
       },
-      "<25%"
+      "<"
     )
     .from(
       [".p2.twitter"],
