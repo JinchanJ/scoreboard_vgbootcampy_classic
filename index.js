@@ -9,7 +9,7 @@
       {
         duration: 1.5,
         width: "0",
-        ease: "power4.out",
+        ease: "power4.Out",
       },
       1
     )
