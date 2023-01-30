@@ -7,9 +7,9 @@
     .from(
       [".anim_container_outer"],
       {
-        duration: 1.5,
+        duration: 1,
         width: "0",
-        ease: "power4.Out",
+        ease: "power2.inOut",
       },
       1
     )
@@ -20,7 +20,7 @@
         x: "-373px",
         ease: "power4.Out",
       },
-      "<"
+      "<25%"
     )
     .from(
       [".p2.twitter"],
@@ -84,22 +84,6 @@
         }
       });
     });
-
-    SetInnerHtml(
-      $(".tournament_name"),
-      data.tournamentInfo.tournamentName.toUpperCase()
-    );
-
-    let phaseTexts = [];
-
-    $(".text").each(function (e) {
-      FitText($($(this)[0].parentNode));
-    });
-
-    $(".container div:has(>.text:empty)").css("margin-right", "0");
-    $(".container div:not(:has(>.text:empty))").css("margin-right", "");
-    $(".container div:has(>.text:empty)").css("margin-left", "0");
-    $(".container div:not(:has(>.text:empty))").css("margin-left", "");
   }
 
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
